@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <style>
+   table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th{
+background-color:#ffcc99;
+font-weight: bold;
+text-align: center;
+}
+td{
+text-align: center;
+}
+
+</style>
+  </head>
+  <body>
+  <div>
+  <p>  Hi,  <p>
+   <p>
+
+Please place vehicle as per below details.  <br><br><b>Note :Place vehicle on time and share details on mail.</b>
+
+</p>
+  </div>
+    <div>
+    <table >
+    <tr>
+   <th nowrap = "nowrap">  <?=  wholeNo ?> </th>  
+    <th nowrap = "nowrap">   <?=   ODNo ?>    </th>
+    <th nowrap = "nowrap">    <?=     PickUpDate ?> </th>
+      <th nowrap = "nowrap">   <?=    SellerName  ?> </th>
+      <th nowrap = "nowrap">   <?=    RunType  ?> </th>
+       <th nowrap = "nowrap">   <?=   PickUpAddress  ?> </th>
+        <th nowrap = "nowrap">  <?=    PickUpCity ?> </th>
+         <th nowrap = "nowrap">  <?=     Contact  ?> </th>
+          <th nowrap = "nowrap">  <?=    PickUpTime   ?> </th>
+          <th nowrap = "nowrap">  <?=    NoofBoxes   ?> </th>
+          <th nowrap = "nowrap">  <?=    TotalWeight   ?> </th>
+          <th nowrap = "nowrap">  <?=    VehicleType ?> </th>
+         <th nowrap = "nowrap">  <?=     DropCity  ?> </th>
+          <th nowrap = "nowrap">  <?=    Address  ?> </th>
+          <th nowrap = "nowrap">  <?=    ContactName   ?> </th>
+          <th nowrap = "nowrap">  <?=    Mobile   ?> </th>
+         
+         
+            </tr>
+     <? tableValues.forEach(r=> { ?>
+   <tr>
+   <td nowrap = "nowrap"> <?= r[0] ?> </td>  <td nowrap = "nowrap"> <?= r[1] ?> </td> <td nowrap = "nowrap"> <?= r[2] ?> </td> <td nowrap = "nowrap"> <?= r[3] ?> </td> <td nowrap = "nowrap"> <?= r[4] ?> </td>
+   <td nowrap = "nowrap"> <?= r[5] ?></td> <td nowrap = "nowrap"> <?= r[6] ?> </td> <td nowrap = "nowrap"> <?= r[7] ?> </td> <td nowrap = "nowrap"> <?= r[8] ?> </td> <td nowrap = "nowrap"> <?= r[9] ?> </td>
+   <td nowrap = "nowrap"> <?= r[10] ?> </td> <td nowrap = "nowrap"> <?= r[11] ?> </td> <td nowrap = "nowrap"> <?= r[12] ?> </td> <td nowrap = "nowrap"> <?= r[13] ?> </td>
+   <td nowrap = "nowrap"> <?= r[14] ?> </td> <td nowrap = "nowrap"> <?= r[15] ?> </td> 
+   
+    </tr>
+      <?}) ?>
+    </table>
+    </div>
+   <div>
+<p> Regards </p>
+</div>
+  </body>
+</html>
